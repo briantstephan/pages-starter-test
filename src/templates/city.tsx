@@ -29,35 +29,24 @@ import PageLayout from "../components/PageLayout";
 import EditTool from "../components/EditTool";
 import Breadcrumbs from "../components/Breadcrumbs";
 
+import { TemplateConfig } from '@yext/pages';
+
 export const config: TemplateConfig = {
   stream: {
-    $id: "city-stream",
+    $id: 'stream',
     filter: {
-      entityTypes: ["ce_city"],
+      entityTypes: ['location'],
     },
-    fields: [
-      "id",
-      "uid",
-      "meta",
-      "name",
-      "description",
-      "slug",
-      "c_addressRegionDisplayName",
-      "dm_directoryParents.name",
-      "dm_directoryParents.slug",
-      "dm_directoryParents.meta",
-      "dm_directoryParents.c_addressRegionDisplayName",
-      "dm_directoryChildren.name",
-      "dm_directoryChildren.address",
-      "dm_directoryChildren.mainPhone",
-      "dm_directoryChildren.slug",
-    ],
+    // Specifies the exact data that each generated document will contain.
+    // This data is passed in directly as props to the default exported function.
+    fields: ['id', 'uid', 'meta', 'name', 'slug', 'test1'],
+    // The entity language profiles that documents will be generated for.
     localization: {
-      locales: ["en"],
-      primary: false,
+      locales: ['en'],
     },
   },
 };
+
 
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
   return `${document.slug.toString()}`;
