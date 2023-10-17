@@ -30,7 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "@vitejs/plugin-react": "^4.0.4",
-    "@yext/pages": "file:./yext-pages-1.0.0-rc.4.tgz",
+    "@yext/pages": "https://github.com/briantstephan/pages-starter-test/raw/main/yext-pages-1.0.0-rc.4.tgz",
     "autoprefixer": "^10.4.8",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.7",
