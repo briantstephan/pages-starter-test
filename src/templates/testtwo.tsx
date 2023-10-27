@@ -8,7 +8,7 @@ export const config: TemplateConfig = {
     },
     // Specifies the exact data that each generated document will contain.
     // This data is passed in directly as props to the default exported function.
-    fields: ['id', 'uid', 'meta', 'name', 'slug', 'test2'],
+    fields: ['id', 'uid', 'meta', 'name', 'slug', 'test1'],
     // The entity language profiles that documents will be generated for.
     localization: {
       locales: ['en'],
